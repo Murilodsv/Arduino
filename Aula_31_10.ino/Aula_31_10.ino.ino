@@ -9,7 +9,7 @@ String valorZ;
 
 Serial.begin(9600); // Boud-Rate para porta COM (1200 - 115200) Taxas baixas para distancia maiores e vice-versa.
 
-Serial.print("Grupo de Pesquisa Arduino - ESALQ/USP"); // usado para "printar" valores
+Serial.print("Grupo de Pesquisa Arduino - ESALQ/USP \ln"); // usado para "printar" valores
 
 valorX = "Murilo";
 valorY = "Vianna";
