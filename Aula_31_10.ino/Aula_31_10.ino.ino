@@ -3,26 +3,26 @@ void setup() {
 
   //Caso atribua valor decimal em variavel inteira, o valor será truncado
 
-char valorX;
-char valorY;
-char valorZ;
+String valorX;
+String valorY;
+String valorZ;
 
 Serial.begin(9600); // Boud-Rate para porta COM (1200 - 115200) Taxas baixas para distancia maiores e vice-versa.
 
 Serial.print("Grupo de Pesquisa Arduino - ESALQ/USP"); // usado para "printar" valores
 
-valorX = "X";
-valorY = "Y";
-valorZ = "+"; // "&&" = E() do excel "||" = OU() do excel
+valorX = "Murilo";
+valorY = "Vianna";
+valorZ = valorX + valorY; // "&&" = E() do excel "||" = OU() do excel
 
 Serial.print("\tValorX = "); //"\t" é para ajustar com um "tab" entre valores
-Serial.print(valorX,BIN); // "BIN" para mostrar o valor binario da variavel
+Serial.print(valorX); // "BIN" para mostrar o valor binario da variavel
 
 Serial.print("\tValorY = "); //"\t" é para ajustar com um "tab" entre valores
-Serial.print(valorY,BIN);
+Serial.print(valorY);
 
 Serial.print("\tValorZ = "); //"\t" é para ajustar com um "tab" entre valores
-Serial.print(valorZ,BIN);
+Serial.print(valorZ);
 
 }
 
